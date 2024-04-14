@@ -1,0 +1,119 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+body{
+  font-family: "Cairo", sans-serif;
+}
+.header{
+  padding: 10px 16px;
+ background-image: url("https://t3.ftcdn.net/jpg/04/80/14/74/360_F_480147477_AmCW6WuLAKTNDyTnf7iaC9DCXvrmveOz.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+  color: #f1f1f1;
+
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  padding: 30px;
+  text-align: center;
+
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #006f60;
+  color: rgb(208, 16, 16); 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color:#006f60 ;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: none; /* Masquer initialement les éléments de la playlist */
+}
+
+li:last-child {
+  border-bottom: none; /* Supprimer la bordure inférieure du dernier élément */
+}
+
+li:hover {
+  background-color: #c2ecc7;
+  cursor: pointer;
+}
+
+li[style="display: block;"] {
+  display: block; /* Afficher uniquement les éléments de la playlist filtrés */
+}
+
+audio{
+  padding: 5px;
+}
+
+#audioPlayer {
+  width: 300px; /* ou toute autre largeur appropriée */
+  height: 50px; /* ou toute autre hauteur appropriée */
+  
+  border-radius: 8px; /* Bords arrondis pour un look moderne */
+  box-shadow: 0 4px 8px rgba(213, 74, 74, 0.5); /* Ombre initiale */
+  transition: all 0.3s ease; /* Douce transition pour tous les changements */
+}
+#audioPlayer:hover {
+ 
+  box-shadow: 0 8px 16px rgba(58, 199, 84, 0.6); /* Ombre plus intense */
+}
+
+
+
+
+#searchInput{
+  width: 300px;
+  font-family: "Cairo", sans-serif;
+  color: white;
+  
+}
+#themeSelect{
+  width: 300px;
+  font-family: "Cairo", sans-serif;
+}
+
+.playlist {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .playlist {
+  padding-top: 102px;
+}
+
+#audioInfo{
+ color: gold; 
+}

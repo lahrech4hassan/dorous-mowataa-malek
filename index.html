@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دروس دينية منوعة</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="your_file_path/essential_audio.css"></link>
+</head>
+<body>
+  <header class="header" id="myHeader">
+    <div class="container">
+      
+      <h1>دروس  من موطأ الإمام مالك</h1>
+      <p>رحمه الله</p>
+      <audio controls id="audioPlayer">
+        Votre navigateur ne supporte pas l'élément <code>audio</code>.
+      </audio>
+      <div id="audioInfo"></div>
+      <label >البحث بكلمات مفتاحية</label>
+      <input type="text" id="searchInput" placeholder="البحث بإسم الشيخ او العنوان ">
+      <label for="themeSelect">إختيار التصنيف :</label>
+      <select id="themeSelect">
+        <option value="">جميع التصنيفات</option>
+        <option value="تعريف بالموطأ">تعريف بالموطأ</option>
+        <option value="كتاب أسماء النبي صلى الله عليه وسلم">كتاب أسماء النبي صلى الله عليه وسلم</option>
+        <option value="كتاب الاستسقاء">كتاب الاستسقاء</option>
+        <option value="كتاب الاستئذان">كتاب الاستئذان</option>
+        <option value="كتاب الأشربة">كتاب الأشربة</option>
+        <option value="كتاب الأقضية">كتاب الأقضية</option>
+        <option value="كتاب البيعة">كتاب البيعة</option>
+        <option value="كتاب البيوع">كتاب البيوع</option>
+        <option value="كتاب الجامع">كتاب الجامع</option>
+        <option value="كتاب الجنائز">كتاب الجنائز</option>
+        <option value="كتاب الجهاد">كتاب الجهاد</option>
+        <option value="كتاب الحج">كتاب الحج</option>
+        <option value="كتاب الحدود">كتاب الحدود</option>
+        <option value="كتاب الذبائح">كتاب الذبائح</option>
+        <option value="كتاب الرضاع">كتاب الرضاع</option>
+        <option value="كتاب الرؤيا">كتاب الرؤيا</option>
+        <option value="كتاب الزكاة">كتاب الزكاة</option>
+        <option value="كتاب السلام">كتاب السلام</option>
+        <option value="كتاب الشعر">كتاب الشعر</option>
+        <option value="كتاب الشفعة">كتاب الشفعة</option>
+        <option value="كتاب الصدقة">كتاب الصدقة</option>
+        <option value="كتاب الصلاة">كتاب الصلاة</option>
+        <option value="كتاب الصيام">كتاب الصيام</option>
+        <option value="كتاب الصيد">كتاب الصيد</option>
+        <option value="كتاب الضحايا">كتاب الضحايا</option>
+        <option value="كتاب الطلاق">كتاب الطلاق</option>
+        <option value="كتاب الطهارة">كتاب الطهارة</option>
+        <option value="كتاب العتق والولاء">كتاب العتق والولاء</option>
+        <option value="كتاب العقول">كتاب العقول</option>
+        <option value="كتاب العقيقة">كتاب العقيقة</option>
+        <option value="كتاب العلم">كتاب العلم</option>
+        <option value="كتاب العين">كتاب العين</option>
+        <option value="كتاب الفرائض">كتاب الفرائض</option>
+        <option value="كتاب القدر">كتاب القدر</option>
+        <option value="كتاب القراض">كتاب القراض</option>
+        <option value="كتاب القرآن">كتاب القرآن</option>
+        <option value="كتاب القسامة">كتاب القسامة</option>
+        <option value="كتاب الكلام">كتاب الكلام</option>
+        <option value="كتاب اللباس">كتاب اللباس</option>
+        <option value="كتاب المدبر">كتاب المدبر</option>
+        <option value="كتاب المساقاة">كتاب المساقاة</option>
+        <option value="كتاب المكاتب">كتاب المكاتب</option>
+        <option value="كتاب النذور والأيمان">كتاب النذور والأيمان</option>
+        <option value="كتاب النكاح">كتاب النكاح</option>
+        <option value="كتاب الوصية">كتاب الوصية</option>
+        <option value="كتاب جهنم">كتاب جهنم</option>
+        <option value="كتاب حسن الخلق">كتاب حسن الخلق</option>
+        <option value="كتاب دعوة المظلوم">كتاب دعوة المظلوم</option>
+        <option value="كتاب صفة النبي صلى الله عليه وسلم">كتاب صفة النبي صلى الله عليه وسلم</option>
+        <option value="كتاب كراء الأرض">كتاب كراء الأرض</option>
+        <option value="كتب مختلفة">كتب مختلفة</option>
+        <option value="موطأ مالك رواية يحيى بن يحيى الليثي">موطأ مالك رواية يحيى بن يحيى الليثي</option>
+        
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+    </div>
+  </header>
+
+
+<div class="playlist">
+  <ul id="playlist">
+    <!-- Les éléments de la playlist seront ajoutés ici par JavaScript -->
+  </ul>
+  
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+  
+<script src="script.js"></script>
+</body>
+</html>
